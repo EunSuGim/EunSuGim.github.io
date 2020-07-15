@@ -22,10 +22,10 @@ type()을 사용하여 자료형을 확인 할 수 있다.
 int, float, complex(복소수) 등
 
 ### Text_Sequence(str)  
-*indexing*  
+- *indexing*  
    ex) my_var = "hello" => print(my_var[-1]) = "o"  
-*slicing*  
-   ex) my_var[0:3] = "my_", my_var[:]  
+- *slicing*  
+   - ex) my_var[0:3] = "my_", my_var[:]  
 *in, not_in*  
    ex) print("hello" in my_var) = True, print("hello" not in my_var)  
 *formatting*  
