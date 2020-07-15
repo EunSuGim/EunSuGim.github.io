@@ -1,7 +1,6 @@
 ---
 title: "github.io 블로그 시작하기"
 excerpt: "GitHub Blog 서비스"
-date:2020-07-15
 categories: blog
 ---
 
