@@ -1,6 +1,6 @@
 ---
-title: "github.io 블로그 시작하기"
-excerpt: "GitHub Blog 서비스"
+title: "AI개발 블로그 시작"
+excerpt: "GitHub Blog 만들기"
 categories: blog
 tags: blog
 ---
