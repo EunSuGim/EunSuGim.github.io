@@ -239,6 +239,7 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+#밑에있는거 주석처리하면 카테고리나 태그 표시가 안뜸
 category_archive:
   type: liquid
   path: /categories/

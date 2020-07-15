@@ -1,8 +1,9 @@
 ---
 title: "Python - Data_Type"
 excerpt: "Data_Type"
-categories: blog
-tags: blog
+categories: python
+tags: python
+last_modified_at: 2020-07-15T08:17:00-18:00
 ---
 ## Data_Type 
  
@@ -36,7 +37,7 @@ int, float, complex(복소수) 등
    생성되면 변경 X list와 형변환가능 ex) a = 1,3 => b = list(a)  
 
 ## Mapping  
-- *ex) a = {"name" : "kim", "age" : 49}*  
+*ex) a = {"name" : "kim", "age" : 49}*  
 	- *key, value 값으로 나뉘어짐.※keys(), values()는 list처럼 보이지만 list형이 아니다.*  
 	   ex) key_list = a.keys(), value_list = a.values() 
 - *key값 중복불가*  
