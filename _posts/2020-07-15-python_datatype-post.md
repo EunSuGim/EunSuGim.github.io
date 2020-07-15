@@ -51,14 +51,15 @@ int, float, complex(복소수) 등
 순서, 중복 X
 
 ## date,date_time
-date는 날짜, datetime은 시간
+date는 날짜, datetime은 시간  
    ex) my_str = "today is {}year, {}month, {}day.", today = date.today(), today =datetime.today()  
 - *date*  
    ex) my_str.format(today.year, today.month, today.day)
 - *datetime*  
    ex) my_str.format(today.hour, today.minute, today.second)
 - *days*  
-   날짜 계산 하지만 month와 year은 지원을 안한다. ex) days = timedelta(days=-3)  
+   날짜 계산 하지만 month와 year은 지원을 안한다.  
+   ex) days = timedelta(days=-3)  
 	- month와 year도 계산할려면 dateutil 모듈이 필요하다.  
 		ex) from dateutil.relativedelta import relativedelta  
 	- months는 현재 달에서 더하거나 빼는 것, month는 특정 달로 바꾸는 것.  
