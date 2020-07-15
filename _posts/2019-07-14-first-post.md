@@ -7,5 +7,7 @@ categories: blog
 
 블로그 시작했다. 머이리 복잡하냐;;
 
+
 이글의 제목은 {{page.title}}이고
-마지막 수정 시간은 {{page.last_modified_at}}이다
+
+디자인이 제일 싫네 진짜;
