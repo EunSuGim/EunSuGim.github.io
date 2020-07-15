@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "aqua" #"default" # "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "ReadYaI"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "EunSu_Kim"
-description              : "An amazing website."
+description              : "AI preparing student."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,10 +93,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ReadYaI"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "South_Korea"
   email            :
   links:
     - label: "Email"
@@ -131,7 +131,7 @@ footer:
       icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+      icon: "https://github.com/EunSuGim"
       # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
