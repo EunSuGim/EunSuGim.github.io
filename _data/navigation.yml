@@ -1,11 +1,13 @@
 # main links
 main:
-  - title: "포스트"
+  - title: "posts"
     url: https://eunsugim.github.io/
   - title: "About"
     url: /about/
   - title: "categories"
     url: /categories/
+  - title: "Project"
+    url:
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

@@ -1,7 +1,8 @@
 ---
 title: "Python - Python기본 정보"
 excerpt: "Python의 기본정보"
-categories: blog
+categories: python
+tag: python
 ---
 ## Python에 대하여  
 
