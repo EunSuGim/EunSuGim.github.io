@@ -6,9 +6,6 @@ tags: python
 last_modified_at: 2020-07-16T08:17:00-18:00
 ---
 ## Function
-1. 내장함수  
-1. 사용자 정의 함수  
-
 함수 : 특정작업을 수행하는 일정량의 코드 모음  
 - ex) def my_sum()  
 
