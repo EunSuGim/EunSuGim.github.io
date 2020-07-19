@@ -38,7 +38,8 @@ int, float, complex(복소수) 등
 
 ## Mapping  
 *ex) a = {"name" : "kim", "age" : 49}*  
-	- *key, value 값으로 나뉘어짐.※keys(), values()는 list처럼 보이지만 list형이 아니다.*  
+	- *key, value 값으로 나뉘어짐.
+	  ※keys(), values()는 list처럼 보이지만 list형이 아니다.*  
 	   ex) key_list = a.keys(), value_list = a.values() 
 - *key값 중복불가*  
    ex) a = {"name" : "kim", "age" : 19, "name" : "lee"} print=> {'name' : 'lee',  'age' : 19}  
