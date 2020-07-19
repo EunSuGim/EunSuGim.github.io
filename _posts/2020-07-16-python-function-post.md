@@ -6,19 +6,14 @@ tags: python
 last_modified_at: 2020-07-16T08:17:00-18:00
 ---
 ## Function
-1. 내장함수  
-1. 사용자 정의 함수  
-
 함수 : 특정작업을 수행하는 일정량의 코드 모음  
-- ex) def my_sum()  
-
-가변 함수 : def my_sum(*args)  
+- ex) ```def my_sum(*args) ```
 
 ## Default parameter
-- def my_operator(a,b,c=True) : 마지막 인자만 설정가능  
 - python함수의 인자는 mutable, immutable 둘 중 하나  
 - call-by-value & call-by-reference X와 유사  
-
+- 마지막 인자만 설정가능  
+  ex) ```def my_sum(a,b,c=True) ```
 ## 실인자 데이터가 변하는 경우와 변하지 않는 경우
 ```python
 def my_func(tmp_number, tmp_list) :
