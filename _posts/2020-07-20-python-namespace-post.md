@@ -39,17 +39,17 @@ print((Students.scholarship_rate)) # 1이 출력된다.```
     def change_scholarship(cls,rate): #self 대신 cls인자를 추가해줘야한다.```  
 
 - static_method	 
-   - 추가되는 인자없이 class안에서 정의된 일반 함수
+   - 추가되는 인자없이 class안에서 정의된 일반 함수  
+   
 ## Information_hiding(정보은닉)
   instance가 가지는 속성은 중요한 데이터이기 때문에 외부에서 직접적으로 access하는건 좋지않다.  
-- instace
+- instace  
    ex) self.__name = name  
 
 - method  
    ex) ```    def __print_date(self): ```  
    
 - access할려면 method를 이용해서 사용하도록 처리
-   ex)
    ```
     def get_name(self):
         return self.name
