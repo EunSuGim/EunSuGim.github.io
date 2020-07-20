@@ -57,38 +57,3 @@ print((Students.scholarship_rate)) # 1이 출력된다.```
     def set_name(self, name) :
         self.name = name
 		```
-	
-data_x = 10 #immutable
-data_list = [10] #mutable
-
-my_func(data_x,data_list)
-```
-
-## 함수 id()
-객체의 고유 주소값을 return하는 함수
-파이썬은 숫자인 경우 대략 0~256까지는 많이 사용하는 객체(값) 이여서 하나의 객체를 가르킨다.  
-```python
-my_list1 = [1,2,3]
-my_list2 = [1,2,3]
-
-print(id(my_list1)) # 주소값 2685740667400
-print(id(my_list2)) # 주소값 2685740667912 -> 주소값이 다르다
-
-x = 100 #둘다 주소값이 같다.
-y = 100
-```
-
-## Lambda expression
-익명함수(anonymous function)  
-변수에 저장, 함수의 인자로 사용  
-함수의 리턴값으로 함수를 return
-
-```python
-my_lambda = lambda x1, x2
-my_lambda(10,20)
-```
-
-lambda는 함수가 아니다 lambda는 대체식이다.
-```python
-my_lambda(10,20) # 10+20으로 코드자체를 변환
-```
