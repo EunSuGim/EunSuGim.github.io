@@ -53,10 +53,6 @@ print((Students.scholarship_rate)) # 1이 출력된다.
    ex) ```    def __print_date(self): ```  
    
 - access할려면 method를 이용해서 사용하도록 처리  
-```
-    def get_name(self):
-        return self.name
+   - def get_name(self):  return self.name  
 
-    def set_name(self, name) :
-        self.name = name 
-		```  
+   - def set_name(self, name) : self.name = name  
