@@ -3,7 +3,7 @@ title: "Python - Namespace"
 excerpt: "Namespace"
 categories: python
 tags: python
-last_modified_at: 2020-07-16T08:17:00-18:00
+last_modified_at: 2020-07-20T08:17:00-18:00
 ---
 ## Namespace
 객체가 가지는 데이터를 나누어서 관리하는 공간  
@@ -28,7 +28,8 @@ stu.scholarship_rate = 4
 
 print(stu.scholarship_rate)  #4가 출력된다.
 
-print((Students.scholarship_rate)) # 1이 출력된다.```  
+print((Students.scholarship_rate)) # 1이 출력된다.
+```  
 - instace_method  
    - 하나의 instace에 한정된 데이터를 생성, 변경, 참조하기 위해 사용 
 
@@ -37,7 +38,8 @@ print((Students.scholarship_rate)) # 1이 출력된다.```
      ex) ```
     @classmethod
     def change_scholarship(cls,rate): 
-	#self 대신 cls인자를 추가해줘야한다.```  
+	#self 대신 cls인자를 추가해줘야한다.
+	```  
 
 - static_method	 
    - 추가되는 인자없이 class안에서 정의된 일반 함수  
