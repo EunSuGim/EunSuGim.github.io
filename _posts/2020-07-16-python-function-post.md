@@ -13,7 +13,7 @@ last_modified_at: 2020-07-16T08:17:00-18:00
 - python함수의 인자는 mutable, immutable 둘 중 하나  
 - call-by-value & call-by-reference X와 유사  
 - 마지막 인자만 설정가능  
-  ex) ```def my_sum(a,b,c=True) ```
+  ex) ```def my_sum(a,b,c=True) ```  
 ## 실인자 데이터가 변하는 경우와 변하지 않는 경우
 ```python
 def my_func(tmp_number, tmp_list) :
