@@ -5,12 +5,19 @@ categories: python
 tags: python
 last_modified_at: 2020-07-20T08:17:00-18:00
 ---
-## Namespace
-객체가 가지는 데이터를 나누어서 관리하는 공간  
+## Magic_function  
+미리 정의되어 있는 특별한 메소드들을 재정의 함으로써 인터프리터가 객체 생성, 표현, 연산 등 에 사용할 수 있는 메소드  
 
-instance_namespace ⊂ class_namespace ⊂ superclass_namespace
+## Magic_function 종류
+1. __init__  
+1. __name__  
+1. __add__  
+1. __del__  
+1. __repr__  
+1. __lt__  
 
-## 동적으로 속성이나 method를 추가 할 수 있다.
+## __init__  
+객체생성할때 가장 먼저 실행되는 메소드. java의 초기화 생성자 메소드 역할  
 ``` 
 class Students(object) :
     scholarship_rate = 1
@@ -19,10 +26,8 @@ class Students(object) :
         self.grade = grade
 		
 stu = Students("kim",3)
-```
-instance에 없는 변수를 선언해도 오류가 안난다.  
-   ex) ``` stu.dept = "컴퓨터" ```  
-class명으로 선언하지않으면 class_namespace에서 가져오지않고 새로운 instace를 생성한다.  
+```  
+
 ```
 stu.scholarship_rate = 4
 
