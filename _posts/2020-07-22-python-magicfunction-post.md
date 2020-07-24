@@ -6,7 +6,8 @@ tags: python
 last_modified_at: 2020-07-20T08:17:00-18:00
 ---
 ## Magic_function  
-미리 정의되어 있는 특별한 메소드들을 재정의 함으로써 인터프리터가 객체 생성, 표현, 연산 등 에 사용할 수 있는 메소드  
+미리 정의되어 있는 특별한 메소드들을 재정의 함으로써 인터프리터가  
+객체 생성, 표현, 연산 등 에 사용할 수 있는 메소드  
 
 ## Magic_function 종류
 1. __init__  
@@ -17,7 +18,8 @@ last_modified_at: 2020-07-20T08:17:00-18:00
 1. __lt__  
 
 ## __init__  
-객체가 생성될때 가장 먼저 실행되는 초기화메소드. 생성자(Constructor), Initializer라고 불림  
+객체가 생성될때 가장 먼저 실행되는 초기화메소드.  
+생성자(Constructor), Initializer라고 불림  
 ``` 
 class Students(object) :
     scholarship_rate = 1
@@ -28,7 +30,7 @@ class Students(object) :
 stu = Students("kim",3)
 ```  
 ## __del__  
-객체가 소멸될때 실행되는 메소드. 소멸자(Destructor).
+객체가 소멸될때 실행되는 메소드. 소멸자(Destructor).  
 명시적으로 객체를 메모리에서 지울 수 있다.
 ```
 class Students(object) :
@@ -57,7 +59,7 @@ print(stu1 + stu2)
 ```
 결과는 18이 나온다.  
 ## __repr__
-객체를 출력할때 사용하는 메소드.
+객체를 출력할때 사용하는 메소드.  
 자바의 toString과 비슷
 ```
 class Students(object) :
