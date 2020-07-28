@@ -12,6 +12,7 @@ Closure를 이해할려면 일급함수부터 알아야한다.
 - python은 일급함수를 지원하는 언어로써 함수를 runtime으로 생성할 수 있다.  
 - 프로그램의 구성요소(객체)가 다음 조건을 만족하면 first_class_citizen이 된다.  
 1. 구성요소가 변수나 데이터 구조의 속성으로 저장될 수 있어야한다.  
+
 ```
 def my_add(x,y) :
 	return x + y
@@ -19,8 +20,10 @@ def my_add(x,y) :
 f = my_add
 print(f(100,200))
 ```
+
 1. 함수의 인자로 전달될 수 있어야한다.  
 ```
+
 def my_add(x,y) :
 	return x+y
 	
@@ -34,11 +37,13 @@ def my_operation(func, arg_list) :
 	
 data = [(1,2), (3,4), (5,6)]
 print(my_operation(my_add,data))
-```
+```  
+
 1. 함수의 결과로 리턴될 수 있어야한다.  
+
 ```
 return my_func
-```  
+```   
 
 ## Closure    
 - 일급함수의 개념을 이용하여 scope에 묶인 변수를 바인딩하는 기술이다.(name binding)  
@@ -47,6 +52,7 @@ return my_func
 - runtime동안에 내가 필요한 함수를 만들어 낼 수 있다.  
 
 ex)    
+
 ```
 #my_add 함수는 내부함수가 실행되고 리턴되면 종료되는 함수이다.
 def my_add(x) :
@@ -55,20 +61,23 @@ def my_add(x) :
 		
 	return my_add_maker
 ```  
+
 ```
 add_5 = my_add(5) # x는 지역변수가되어 5가 저장이된다.
 add_10 = my_add(10)
-
-print(add_5(100)) # x는 지역변수이므로 소멸되었지만 closure를 통해 접근할 수 있다.
-print(add_10(100)) # 100은 y값이되어 지역변수 x와 연산한다. 
-```  
-두 함수의 출력결과는 105, 110이 출력된다.
+, 110이 출력된다.
 
 
 ## Decorator  
-python에서 기존의 코드에 여러가지 기능을 추가하는 python 구문  
+python에서 기존의 
+print(add_5(100)) # x는 지역변수이므로 소멸되었지만 closure를 통해 접근할 수 있다.
+print(add_10(100)) # 100은 y값이되어 지역변수 x와 연산한다. 
+```  
+
+두 함수의 출력결과는 105코드에 여러가지 기능을 추가하는 python 구문  
 - @사용하여 함수를 decorator선언하여 함수의 전처리와 후처리를 할 수 있다.  
 	ex)  
+	
 ```
 import time
 
@@ -90,7 +99,9 @@ def my_func() :
 decorator_func = my_outer_func(my_func)
 decorator_func()
 ```  
+
 출력 결과는  
+
 ```
 함수 수행시작 : my_func #전처리
 함수 호출!!
@@ -102,6 +113,7 @@ Closure를 사용하여 my_func에 수행하는 함수명과
 그런데 my_func같이 해당 기능을 추가해야하는 함수가  
 100개이상이라면 어떻게 해야할까?  
 그럴때 Decorator가 필요하다.  
+
 ```
 import time
 
@@ -135,16 +147,21 @@ add_func()
   
 ## *args, **kwargs  
 또한 decorator는 범위를 정하지않는 인자를 받을 수 있다.  
+
 ```
 def print_user_name(*args) : #인자의 갯수를 정하지않아도 정상작동한다.
 	for name in args :
 		print(name)
 ```   
+
 그리고 딕셔너리 형태로 인자를 받을 수 있다.  
+
 ```
 def print_user_name(**kwargs) : #인자의 갯수를 정하지않아도 정상작동한다.
 	for key, value in kwargs.items() :
 		print("{} is {}".format(key, value))
 
 print_user_name(myname="kim")
-```
+```  
+
+
