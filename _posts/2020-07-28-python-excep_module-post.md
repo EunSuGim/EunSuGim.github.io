@@ -51,6 +51,8 @@ def my_func(my_list) :
 		print("try가 실행")
 	except Exception :
 		print("except가 실행")
+	else :
+		print("오류가없으면 실행")
 	finally:
 		print("무조건 수행")
 ```
@@ -60,18 +62,8 @@ def my_func(my_list) :
 - except  
 	try구문에서 오류가 발생했을 경우 실행된다.  
 	여러 except명이 있다.ex)ValueError,OSError  
+- else  
+	except에서 오류없이 끝날경우 실행된다.  
 - finally  
 	try,except 구별없이 마지막에 항상 실행되는 구문이다.
 	
-
-  instance가 가지는 속성은 중요한 데이터이기 때문에 외부에서 직접적으로 access하는건 좋지않다.  
-- instace  
-   ex) self.__name = name  
-
-- method  
-   ex) ```    def __print_date(self): ```  
-   
-- access할려면 method를 이용해서 사용하도록 처리  
-   - def get_name(self):  return self.name  
-
-   - def set_name(self, name) : self.name = name  
