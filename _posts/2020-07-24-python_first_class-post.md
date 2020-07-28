@@ -22,6 +22,7 @@ print(f(100,200))
 ```
 
 1. 함수의 인자로 전달될 수 있어야한다.  
+
 ```
 
 def my_add(x,y) :
@@ -144,6 +145,7 @@ def add_func() :
 my_func()
 add_func()
 ```  
+  
   
 ## *args, **kwargs  
 또한 decorator는 범위를 정하지않는 인자를 받을 수 있다.  
