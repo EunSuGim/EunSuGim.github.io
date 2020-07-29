@@ -1,6 +1,8 @@
 ---
 title: "Python - Module,Exception"
 excerpt: "Module,Exception"
+toc: true
+toc_sticky: true
 categories: python
 tags: python
 last_modified_at: 2020-07-28T08:17:00-18:00
