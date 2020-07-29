@@ -1,6 +1,8 @@
 ---
 title: "Python - Magic_function"
 excerpt: "Magic_function"
+toc: true
+toc_sticky: true
 categories: python
 tags: python
 last_modified_at: 2020-07-20T08:17:00-18:00

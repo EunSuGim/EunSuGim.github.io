@@ -1,6 +1,8 @@
 ---
 title: "Python - Python기본 정보"
 excerpt: "Python의 기본정보"
+toc: true
+toc_sticky: true
 categories: python
 tag: python
 ---

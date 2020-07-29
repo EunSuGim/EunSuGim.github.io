@@ -1,6 +1,8 @@
 ---
 title: "Python - Data_Type"
 excerpt: "Data_Type"
+toc: true
+toc_sticky: true
 categories: python
 tags: python
 last_modified_at: 2020-07-15T08:17:00-18:00
