@@ -78,9 +78,29 @@ class : 여러 스타일들을 그룹으로 묶어 한번에 지정할 수 있�
 ## JavaScript  
 web client에서 실행되는 언어입니다.  
 요즘에는 서버용 개발언어로 사용하기도합니다.(node-js)  
+HTMl안에 직접적으로 사용도하지만 보통 .js파일로 분리하여  
+관리합니다.  
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<!-- javascript를 작성해놓은 js파일을 불러옵니다.-->
+    <script src="js/my_script.js"></script> 
+</head>
+<body>
+    <div>소리없는 아우성!!</div>
+</body>
+</html>
+```
+
+가독성을 위해 javascript만 따로 분리해서 관리합니다.  
 java와 문법이 굉장히 유사하고 함수를 사용할 수 있습니다.  
 
 ```javascript
+//my_script.js파일이예요.
 //변수선언
 //다른 언어처럼 따로 자료형에따라 선언할 필요가 없습니다.
 var tmp = 3.14 
