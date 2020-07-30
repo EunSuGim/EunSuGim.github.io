@@ -30,6 +30,8 @@ tag와 tag안에 포함된 요소들을 포함해서 element라고 부릅니다.
 HTML은 크게 2가지 부분으로 구성됩니다.  
 _\<head\>_ : 설정부분  
 _\<body\>_ : web browser에서 rendering 할 데이터.  
+class : 여러 스타일들을 그룹으로 묶어 한번에 지정할 수 있게 사용됩니다.  
+\<img\> : 이미지삽입을 위한 tag, src="이미지경로"  
 
 ```html
 <html lang="en">
@@ -72,11 +74,10 @@ _\<body\>_ : web browser에서 rendering 할 데이터.
     </body>
 </html>
 ```  
-- class : 여러 스타일들을 그룹으로 묶어 한번에 지정할 수 있게 사용됩니다.  
-- \<img\> : 이미지삽입을 위한 tag, src="이미지경로"  
 
-##JavaScript  
-web client에서 실행되는 언어입니다. 요즘에는 서버용 개발언어로 사용하기도합니다.(node-js)  
+## JavaScript  
+web client에서 실행되는 언어입니다.  
+요즘에는 서버용 개발언어로 사용하기도합니다.(node-js)  
 java와 문법이 굉장히 유사하고 함수를 사용할 수 있습니다.  
 
 ```javascript
@@ -92,10 +93,9 @@ var tmp5 = {name : "kim", age : 25}
 console.log(tmp5.name)
 ```
 
-var는 재선언을 해도 아무런 오류가 발생하지않아 문제가 생길 수 도 있어  
-let,const가 만들어졌다.  
-- let : 변수 재선언이 불가능하지만 재할당이 가능하다.  
-	ex)   
+var는 재선언을 해도 아무런 오류가 발생하지않아  
+문제가 생길 수 도 있어 let,const가 만들어졌습니다.  
+- let : 변수 재선언이 불가능하지만 재할당이 가능합니다.  
 	
 ```javascript
 let test = 3
@@ -120,8 +120,9 @@ function my_func(x,y) {
 }
 ```  
 
-- 익명 함수 : 일명 lambda(람다)함수로써 이름이 없고 변수에 바로 저장하여 사용합니다.  
-		lambda함수는 정말 많이 사용되므로 나중에 함수사용할때마다 설명하겠습니다.  
+- 익명 함수 : 일명 lambda(람다)함수로써 이름이 없고 변수에  
+		바로 저장하여 사용합니다.  
+		lambda함수는 정말 많이 사용되므로 함수사용할때마다 설명하겠습니다.  
 
 ```javascript
 var test = function(x,y){
