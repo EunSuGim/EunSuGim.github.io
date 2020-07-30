@@ -42,7 +42,7 @@ PyCharm을 만든회사로 HTML,CSS,JavaScript를 기본을 쌓기위해
 사용하기 좋은 툴 중 하나입니다.  
 프로그램을 설치 후 프로젝트를 하나 생성해서 html파일을 하나 생성해봅시다.  
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
