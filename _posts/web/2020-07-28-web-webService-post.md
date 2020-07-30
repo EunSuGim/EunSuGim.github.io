@@ -27,7 +27,7 @@ last_modified_at: 2020-07-28T08:17:00-18:00
 ## WebService의 기본구조  
 1. CS구조를 기본으로합니다
 	- CS구조 : Client -Server 구조를 의미
-1. ex) Web_client(Web Browser - chrome,IE,Safari...)  
+1.  Web_client(Web Browser - chrome,IE,Safari...)  
 	Web_server(본인이 만들거나 일반적인 상용프로그램 사용)  
   
 1. 정적과 동적  
