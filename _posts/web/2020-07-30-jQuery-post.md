@@ -23,7 +23,7 @@ jQeury를 사용하여 스크립트를 더욱 효율적이고 빠르게 개발�
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
-    <script src="js/05_jQuery.js"></script>
+    <script src="js/jQuery.js"></script>
 </head>
 <body>
     <h1>jQuery 연습입니다.!!</h1>
@@ -46,6 +46,7 @@ jQeury를 사용하여 스크립트를 더욱 효율적이고 빠르게 개발�
 ```
 
 ## 사용방법  
+jQuuery.js파일을 만든 후 function하나를 만듭니다.  
 가장 먼저 공부해야할 것은 선택자(selector)입니다.  
 1. 전체 선택자(univeral selector)  
 	ex) `$('*').css("color","red")`  
