@@ -25,6 +25,6 @@ pip를 이용해서 Django를 설치합니다.
 - PyPI : (python Package Index)라는 reposistory에 있는 Django를 설치합니다.  
 CMD창에 `pip install Django` 를 입력합니다.  
 
-- ![Image Alt 텍스트](/assets/img/capture1.png)  
+- ![Django 설치](/assets/img/capture1.PNG)  
 
 설치가 완료되었으면, C드라이브에 폴더하나를 생성해줍니다.  
