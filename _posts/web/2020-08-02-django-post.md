@@ -39,3 +39,5 @@ CMD창에 `pip install Django` 를 입력합니다.
 
 이제 프로젝트안에 하나의 application을 추가합니다.  
 'MyPoll'안에서 `python manage.py startapp polls`를 입력해줍니다.  
+
+
