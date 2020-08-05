@@ -41,5 +41,3 @@ CMD창에 `pip install Django` 를 입력합니다.
 'MyPoll'안에서 `python manage.py startapp polls`를 입력해줍니다.  
 
 
-CMD창을 열고 C드라이브에 폴더하나를 생성합니다.  
-`C:\>mkdir django`
