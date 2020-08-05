@@ -21,3 +21,5 @@ Django는 MVC Model을 기반으로 이용합니다.
 	
 ## Django 설치
 
+CMD창을 열고 C드라이브에 폴더하나를 생성합니다.  
+`C:\>mkdir django`
