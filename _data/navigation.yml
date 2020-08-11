@@ -7,7 +7,7 @@ main:
   - title: "categories"
     url: /categories/
   - title: "Project"
-    url:
+    url: /project/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
