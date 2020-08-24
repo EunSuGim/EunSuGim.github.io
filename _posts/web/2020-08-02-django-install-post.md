@@ -3,8 +3,8 @@ title: "Web - Django"
 excerpt: "Django"
 toc: true
 toc_sticky: true
-categories: web
-tags: web
+categories: Django
+tags: Django
 last_modified_at: 2020-07-28T08:17:00-18:00
 ---
 ## Django  
@@ -15,6 +15,7 @@ library : 특수한 처리를 하기 위해 만들어 놓은 함수집합, jQuer
 - 장점 : 내가 모든걸 다 작성할 필요없어 편리합니다.  
 - 단점 : 라이브러리의 특징으로써 전체 프로그램의 로직을 담당하지않습니다.  
 		
+
 Django는 MVC Model을 기반으로 이용합니다.  
 - MVC : Model, View, Controller => Model은 DB, View는 화면처리, Controller는 로직  
 - MVT : Model, View, Template => Model은 DB처리, View는 로직, Template는 화면처리  
@@ -59,7 +60,7 @@ DEBUG = True #True면 개발모드, false면 운영모드(서비스)
 ALLOWED_HOSTS = [] #비워두면 ['localhost','127.0.0.1"]이 default값으로 들어갑니다.
                    #DEBUG가 Falase면 실제운영되는 서버의 IP주소나 Domain Name를 기입합니다.
 
-``` 
+```
 
 `polls.apps.PollsConfig`를 INSTALLED_APPS에 추가합니다.  
 
