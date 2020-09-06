@@ -21,3 +21,7 @@
     ctrl + f 후 c.NotebookApp.notebook_dir 검색
 13. jupyter실행
 
+
+
+실행
+
