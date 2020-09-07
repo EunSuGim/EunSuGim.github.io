@@ -25,7 +25,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 3. pip 최신버전으로 업데이트
 
-   ![image-20200907221341976](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907221341976.png)
+   ![image-20200907221341976](/assets/img/muchine/image-20200907221341976.png)
 
    ``python -m pip install --upgrade pip`` 
 
@@ -34,7 +34,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 4. 가상환경 생성
 
-   <img src="C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907221458774.png" alt="image-20200907221458774" style="zoom:80%;" />
+   <img src="/assets/img/muchine/image-20200907221458774.png" alt="image-20200907221458774" style="zoom:80%;" />
 
    ``conda create -n data_env python=3.7 openssl``
 
@@ -44,7 +44,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 5. 가상환경 확인
 
-   ![image-20200907221733896](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907221733896.png)
+   ![image-20200907221733896](/assets/img/muchine/image-20200907221733896.png)
 
     
 
@@ -53,7 +53,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 6. 가상환경 전환
 
-   ![image-20200907221823010](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907221823010.png)
+   ![image-20200907221823010](/assets/img/muchine/image-20200907221823010.png)
 
     
 
@@ -64,7 +64,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 7. 개발도구 IDE 설치
 
-   ![image-20200907221927662](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907221927662.png)
+   ![image-20200907221927662](/assets/img/muchine/image-20200907221927662.png)
 
     
 
@@ -76,7 +76,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 8. jupyter_notebook 경로 검색
    
 
-   ![image-20200907222154163](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222154163.png)
+   ![image-20200907222154163](/assets/img/muchine/image-20200907222154163.png)
    
 
    ``jupyter notebook --generate-config``
@@ -86,20 +86,17 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
 9. config 에서 jupyter의 working directory 경로 설정
 
-   <img src="C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222319795.png" alt="image-20200907222319795" style="zoom:80%;" />
+   <img src="/assets/img/muchine/image-20200907222319795.png" alt="image-20200907222319795" style="zoom:80%;" />
     ``c.NotebookApp.notebook_dir`` 
 
    jupyter_notebook_config.py파일에서 해당 문구를 찾아 
    주석을 해제하고 기본경로를 설정해주세요.
 
 10. jupyter실행
-    ![image-20200907222547061](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222547061.png)
+    ![image-20200907222547061](/assets/img/muchine/image-20200907222547061.png)
 
     ``jupyter notebook``
 
     주피터를 실행합니다.
-    ![image-20200907222319795](/assets/img/muchine/image-20200907222319795.png)
+    ![image-20200907222319795](/assets/img/muchine/image-20200907222625659.png)
 
-
-
-testtest
