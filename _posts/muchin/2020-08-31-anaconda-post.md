@@ -6,6 +6,7 @@ toc_sticky: true
 categories: ai
 tags: ai
 last_modified_at: 2020-09-07T08:17:00-18:00
+typora-root-url: ..\..\assets\img\muchine
 ---
 
 
@@ -95,6 +96,10 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
     ![image-20200907222547061](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222547061.png)
 
     ``jupyter notebook``
-    주피터를 실행합니다.
-    <img src="C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222625659.png" alt="image-20200907222625659" style="zoom: 50%;" />
 
+    주피터를 실행합니다.
+    ![image-20200907222319795](/image-20200907222319795.png)
+
+
+
+testtest
