@@ -73,7 +73,10 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
    
 
 8. jupyter_notebook 경로 검색
+   
+
    ![image-20200907222154163](C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222154163.png)
+   
 
    ``jupyter notebook --generate-config``
 
@@ -94,4 +97,4 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
     ``jupyter notebook``
     주피터를 실행합니다.
     <img src="C:\Users\kssam\AppData\Roaming\Typora\typora-user-images\image-20200907222625659.png" alt="image-20200907222625659" style="zoom: 50%;" />
-    
+
