@@ -98,7 +98,7 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
     ``jupyter notebook``
 
     주피터를 실행합니다.
-    ![image-20200907222319795](/image-20200907222319795.png)
+    ![image-20200907222319795](./img/muchine/image-20200907222319795.png)
 
 
 
