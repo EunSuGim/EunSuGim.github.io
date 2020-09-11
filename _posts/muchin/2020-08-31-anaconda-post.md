@@ -103,3 +103,4 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 11. 파일 생성
 
     ![image-20200911225505125](/assets/img/muchine/image-20200911230017471.png)
+
