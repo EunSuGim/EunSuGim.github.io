@@ -49,6 +49,8 @@ typora-root-url: ..\..\assets\img\muchine
 
 
 
+
+
 ### ndarray
 
 1. python의 list와 유사
