@@ -1,114 +1,84 @@
-jupyter cell 단축키
+---
+title: "AI - Numpy"
+excerpt: "numpy"
+toc: true
+toc_sticky: true
+categories: ai
+tags: ai
+last_modified_at: 2020-09-07T08:17:00-18:00
+typora-root-url: ..\..\assets\img\muchine
+---
 
-cell
+## 데이터 분석
 
-a, b, d
+### 기술 분석(Descriptive Analysis)
 
-ctrl + enter : 현재 cell을 실행
-
-
-
-numpy : Numerical Python
-
-
-
-vector와 matrix 연산에 특화
-
-pandas, Matplotlib의 기반이 되는 module
-
-machine, deep learning에서 많이 사용
+- 주어진 데이터를 요약/집계하여 결과를 도출하는 것
+- 분석 결과를 따로 해석하는 과정이 없다.
 
 
 
-ndarray라고 불리는 n-차원의 배열을 제공
+### 탐색적 분석(Exploratory Analysis)
+
+- 여러 변수간 트렌드나 패턴 관계를 찾아내는 분석기법
 
 
 
-ndarray특징 :
+### 추론적 데이터 분석(Inferential Analysis)
 
-python의 list와 유사
-
-같은 데이터타입만 저장가능
-
-dtype
-
-a[0]
-
-type(a)
-
-type(a[0])
-
-np.array(a, dtype = np.float64)
+- 샘플 - 모집단 데이터 분석
 
 
 
-arr.ndim 차원의 개수
+### 예측 분석(Predictive Analysis)
 
-arr.shape =()
+- 머신러닝을 통해서 다양한 통계기법을 동원하여 
 
-astype
+  미래 or 발생하지않는 사건에 대해 예측하는 분석기법
 
-zeros, ones, full, empty(초기화없이 공간만, 속도가빠르다.)
+  
 
-arange
+## Numpy
 
-linspace
-
-copy
-
-plot matplotlib.pyplot as plt
-
-mean=50, std=2
-
-random.nomal(mean,std,(10000, ))
-
-plt.hist(arr,bins=100)
-
-plt.show()
-
-랜덤 관련 함수
-
-1. 난수의 재현
-   seed
-2. ndarray의 순서를 랜덤하게 변경
-   random.shuffle(arr)
-3. ndarray안에서 무작위로 선택 sapling기능
-   random.choice(arr, size, replace, p)
+- Numerical Python
+- Vector 와 Matrix 연산에 특화
+- pandas, Matplotlib의 기반이 되는 module
+- machine, deep learning에서 많이 사용
+- ndarray라는 n-차원의 배열을 제공
+- jupyter 실행 후 코드 작성
 
 
 
-reshape
+#### ndarray
 
-ravel
+1. python의 list와 유사
+2. 같은 데이터타입만 저장가능
+
+```python
+import numpy as np
+a = [[1,2,3],[1,2,3],[1,2,3],[1,2,3]]
+print(type(a))
+# <class 'list'>
+print(a) 
+# [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
+arr = np.array(a, dtype = np.float64)
+print(type(arr))
+# <class 'numpy.ndarray'>
+print(arr)
+#[[1. 2. 3.]
+# [1. 2. 3.]
+# [1. 2. 3.]
+# [1. 2. 3.]]
+
+```
+
+- shape
+
+  ```
+  
+  ```
+
+  
 
 
 
-reshape, resize는 리턴값을 받지않는다.
-
-for in enumerate()
-
-arr[1: -1:2]
-
-boolean indexing
-
-np.ix_()
-
-
-
-행렬 곱연산
-
-np.dot(), npmatmul()로 수행
-
-두 행렬의 열 vector와 행 Vector의 size가 같아야함
-
-transpose
-
-T
-
-iterator
-
-비교연산(전체와 인덱스)
-
-np.sum(), np.cumsum(), np.mean(), np.min(), np.argmax(arr), argmin, np.std(), np.exp(arr), np.log10(arr)
-
-numpy의 모든 집계함수는 axis를 기준으로 계산

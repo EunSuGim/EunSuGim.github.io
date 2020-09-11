@@ -99,4 +99,8 @@ AI에 들어가기앞서 필요한 Anaconda를 설치해야합니다.
 
     주피터를 실행합니다.
     ![image-20200907222319795](/assets/img/muchine/image-20200907222625659.png)
+    
+11. 파일 생성
+
+    ![image-20200911225505125](/assets/img/muchine/image-20200907222547061.png)
 
