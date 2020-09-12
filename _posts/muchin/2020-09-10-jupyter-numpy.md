@@ -134,6 +134,22 @@ empty = np.empty((2,2)) # 기존 메모리에 저장되어있던 값으로 초�
 #  [1. 1.] ]
 ```
 
+#### arange
+
+- 특정 규칙에 따라 증가하는 수열 array 생성
+
+```python
+import numpy as np
+arr = np.arange(3)
+# [0 1 2]
+arr = np.arange(3,7)
+print(arr)
+# [3 4 5 6]
+arr = np.arange(3,9,2)
+print(arr)
+# [3 5 7]
+```
+
 
 
 #### random
