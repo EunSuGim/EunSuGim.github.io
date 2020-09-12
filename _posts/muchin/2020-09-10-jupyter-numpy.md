@@ -143,11 +143,69 @@ import numpy as np
 arr = np.arange(3)
 # [0 1 2]
 arr = np.arange(3,7)
-print(arr)
 # [3 4 5 6]
 arr = np.arange(3,9,2)
-print(arr)
+arr = np.arange(3,9,step=2)
 # [3 5 7]
+```
+
+#### linspace
+
+- 두 변수 사이의 값을 간격만큼 띄어 array 생성
+- num : 배열 크기, endpoint : 마지막 변수 포함 여부, retstep : 출력 스타일
+
+```python
+arr = np.linspace(0, 10, num=5, endpoint=True, retstep=True)
+# (array([ 0. ,  2.5,  5. ,  7.5, 10. ]), 2.5)
+arr1 = np.linspace(0, 10, num=5, endpoint=True, retstep=False)
+# [ 0.   2.5  5.   7.5 10. ]
+arr2 = np.linspace(0, 10, num=5, endpoint=False, retstep=False)
+# [0. 2. 4. 6. 8.]
+```
+
+#### copy
+
+- 독립적인 메모리를 가진 배열 복사
+
+```python
+arr = np.array([1,2,3])
+arr_copy1 = arr
+arr_copy2 = np.copy(arr)
+arr_copy[0] = 5
+print(arr)
+# [5 2 3]
+print(arr_copy2)
+# [1 2 3]
+```
+
+#### Matplotlib
+
+- 차트나 플롯으로 그려주는 데이터 시각화(Data Visualization) 패키지
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+plt.plot(["Seoul","Paris","Seattle"], [30,25,55])
+plt.xlabel('City')
+plt.ylabel('Response')
+plt.title('Experiment Result')
+plt.show()
+```
+
+![image-20200912232442693](/assets/img/muchine/image-20200912232442693.png)
+
+#### mean
+
+- 배열의 평균 구하는 함수
+
+```python
+arr = np.array([5,7],[8,6])
+print(np.mean(arr))
+# 6.5
+print(np.mean(arr, axis=0))
+# [6.5 6.5]
+print(np.mean(arr, axis=1))
+# [6. 7.]
 ```
 
 
