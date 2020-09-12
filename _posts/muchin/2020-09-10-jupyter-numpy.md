@@ -199,7 +199,7 @@ plt.show()
 - 배열의 평균 구하는 함수
 
 ```python
-arr = np.array([5,7],[8,6])
+arr = np.array([[5,7],[8,6]])
 print(np.mean(arr))
 # 6.5
 print(np.mean(arr, axis=0))
@@ -208,7 +208,30 @@ print(np.mean(arr, axis=1))
 # [6. 7.]
 ```
 
+#### std
 
+- 표준편차 구하는 함수
+
+```python
+arr = np.array([[4,6],[6,8]])
+print(np.std(arr))
+# 1.118033988749895
+```
+
+#### resize
+
+- 행,열 재배열
+
+```python
+arr = np.array([[1,2,3,4,5,6],[7,8,9,10,11,12]])
+print(arr)
+#[ [ 1  2  3  4  5  6]
+#  [ 7  8  9 10 11 12] ]
+arr.resize(3,4)
+#[ [ 1  2  3  4]
+#  [ 5  6  7  8]
+#  [ 9 10 11 12] ]
+```
 
 #### random
 
@@ -222,9 +245,18 @@ print(arr)
 #  [9 0 1 8]
 #  [9 0 8 6] ]
 
-arr.resize(2,6)
+np.random.shuffle(arr)
 print(arr)
-#[ [9 4 0 1 9 0]
-#  [1 8 9 0 8 6] ]
+#[ [9 0 8 6]
+#  [9 0 1 8]
+#  [9 4 0 1] ]
+
+print(np.random.choice(5,4)) #np.random.randint(0,5,4)와 동일
+# [0 4 3 0]
+print(np.random.choice(5,size=4,replace=False)) #replace = 중복여부
+# [1 3 2 4]
+point = [0.1, 0, 0.3, 0.6, 0]
+print(np.random.choice(5,size=4, p=point)) # 선택확률 설정
+# [3 0 3 3]
 ```
 
