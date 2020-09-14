@@ -1,5 +1,5 @@
 ---
-title: "AI - Numpy"
+title: "AI - Numpy(1)"
 excerpt: "numpy"
 toc: true
 toc_sticky: true
