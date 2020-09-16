@@ -11,128 +11,125 @@ typora-root-url: ..\..\assets\img\muchine
 
 ## 연습문제
 
-#### 기술 분석(Descriptive Analysis)
+#### 문제
 
-- 주어진 데이터를 요약/집계하여 결과를 도출하는 것
-- 분석 결과를 따로 해석하는 과정이 없다.
+ 1. displ(배기량)이 4 이하인 자동차와 5 이상인 자동차 중 
+ 어떤 자동차의 hwy(고속도로 연비)가 평균적으로 더 높은지 확인하세요.
 
+ 2. 자동차 제조 회사에 따라 도시 연비가 다른지 알아보려고 한다. 
+ "audi"와 "toyota" 중 어느 manufacturer(제조회사)의 cty(도시 연비)가 
+ 평균적으로 더 높은지 확인하세요.
 
+ 3. "chevrolet", "ford", "honda" 자동차의 고속도로 연비 평균을 알아보려고 한다. 
+ 이 회사들의 데이터를 추출한 후 hwy(고속도로 연비) 평균을 구하세요.
 
-#### 탐색적 분석(Exploratory Analysis)
+ 4. "audi"에서 생산한 자동차 중에 어떤 자동차 모델의 hwy(고속도로 연비)가 
+ 높은지 알아보려고 한다. "audi"에서 생산한 자동차 중 hwy가 1~5위에 해당하는 
+ 자동차의 데이터를 출력하세요.
 
-- 여러 변수간 트렌드나 패턴 관계를 찾아내는 분석기법
+ 5. mpg 데이터는 연비를 나타내는 변수가 2개입니다. 
+ 두 변수를 각각 활용하는 대신 하나의 통합 연비 변수를 만들어 사용하려 합니다. 
+ 평균 연비 변수는 두 연비(고속도로와 도시)의 평균을 이용합니다. 
+ 회사별로 "suv" 자동차의 평균 연비를 구한후 내림차순으로 정렬한 후 1~5위까지 데이터를 출력하세요.
 
+ 6. mpg 데이터의 class는 "suv", "compact" 등 자동차의 특징에 따라 
+ 일곱 종류로 분류한 변수입니다. 어떤 차종의 도시 연비가 높은지 비교하려 합니다. 
+ class별 cty 평균을 구하고 cty 평균이 높은 순으로 정렬해 출력하세요.
 
+ 7. 어떤 회사 자동차의 hwy(고속도로 연비)가 가장 높은지 알아보려 합니다. 
+ hwy(고속도로 연비) 평균이 가장 높은 회사 세 곳을 출력하세요.
 
-#### 추론적 데이터 분석(Inferential Analysis)
+ 8. 어떤 회사에서 "compact" 차종을 가장 많이 생산하는지 알아보려고 합니다. 
+ 각 회사별 "compact" 차종 수를 내림차순으로 정렬해 출력하세요.
+ 
+ 
 
-- 샘플 - 모집단 데이터 분석
+## Code
 
-
-
-#### 예측 분석(Predictive Analysis)
-
-- 머신러닝을 통해서 다양한 통계기법을 동원하여 
-
-  미래 or 발생하지않는 사건에 대해 예측하는 분석기법
-
-  
-
-## Numpy
-
-- Numerical Python
-- Vector 와 Matrix 연산에 특화
-- pandas, Matplotlib의 기반이 되는 module
-- machine, deep learning에서 많이 사용
-- ndarray라는 n-차원의 배열을 제공
-- jupyter 실행 후 코드 작성
-
-
-
-
-
-### ndarray
-
-1. python의 list와 유사
-2. 같은 데이터타입만 저장가능
-3. 파이썬 기반
+#### 1번
 
 ```python
-import numpy as np #jupyter에서는 import를 cell마다 작성해주는것이 좋다.
-a = [[1,2,3],[1,2,3],[1,2,3],[1,2,3]]
-print(type(a))
-# <class 'list'>
-print(a) 
-# [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
-arr = np.array(a, dtype = np.float64)
-print(type(arr))
-# <class 'numpy.ndarray'>
-print(arr)
-#[[1. 2. 3.]
-# [1. 2. 3.]
-# [1. 2. 3.]
-# [1. 2. 3.]]
+# 1. displ이 4이하인 자동차와 5이상인 자동차 중 어떤 자동차의 hwy가 평균적으로 높은지 확인
 
-```
-
-#### shape
-
-- 행,열 수정
-
-```python
-a = [[1,2,3],[1,2,3],[1,2,3],[1,2,3]]
-print(a)
-# [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
-arr = np.array(a)
-arr.shape = (2,6)
-print(arr)
-# [ [1 2 3 1 2 3]
-#   [1 2 3 1 2 3] ]
-```
-
-#### astype
-
-- 형 변환
-
-```python
 import numpy as np
-a = [[1,2,3],[1,2,3],[1,2,3],[1,2,3]]
-arr = np.array(a).astype(np.float64)
-print(arr)
-#[ [1. 2. 3.]
-#  [1. 2. 3.]
-#  [1. 2. 3.]
-#  [1. 2. 3.] ]
+import pandas as pd
+
+df = pd.read_csv('./data/mpg.txt')
+
+display(df.head())
+
+displ_4_df = df.loc[df['displ'] <= 4]
+displ_5_df = df.loc[df['displ'] >= 5]
+
+under_4 = displ_4_df['hwy'].mean()
+high_5 = displ_5_df['hwy'].mean()
+
+print('under_4 : {}'.format(under_4))
+print('high_5 : {}'.format(high_5))
+
+# under_4 : 25.96319018404908
+# high_5 : 18.07894736842105
 ```
 
-#### zeros, ones, full, empty
-
-- 초기화없이 공간만 생성 (속도가 빠르다.)
+#### 2번
 
 ```python
-import numpy as np
-zero = np.zeros(4)
-zero1 = np.zeros((2,2), dtype=np.int64)
+# 2. 'audi' 와 'toyota' 중 어느 제조회사의 cty가 평균적으로 더 높은지 확인
 
-print(zero)
-# [0. 0. 0. 0.]
-print(zero1)
-#[ [0 0]
-#  [0 0] ]
+df = pd.read_csv('./data/mpg.txt')
 
-one = np.ones(4)
-print(one)
-# [1. 1. 1. 1.]
+display(df.head())
 
-full = np.full((2,2),4)
-print(full)
-#[ [4 4]
-#  [4 4] ]
+manu_audi = df.loc[df['manufacturer'] == 'audi']
+manu_toyota = df.loc[df['manufacturer'] == 'toyota']
 
-empty = np.empty((2,2)) # 기존 메모리에 저장되어있던 값으로 초기화
-#[ [1. 1.]
-#  [1. 1.] ]
+audi_cty = manu_audi['cty'].mean()
+toyota_cty = manu_toyota['cty'].mean()
+
+print('audi : {}'.format(audi_cty))
+print('toyota : {}'.format(toyota_cty))
+
+# audi : 17.61111111111111
+# toyota : 18.529411764705884
 ```
+
+#### 3번
+
+```python
+# 3. "chevrolet", "ford", "honda" 자동차의 고속도로 연비 평균을 알아보려고 한다. 
+# 이 회사들의 데이터를 추출한 후 hwy(고속도로 연비) 평균을 구하세요.
+
+df = pd.read_csv('./data/mpg.txt')
+
+display(df.head())
+
+manu_chev = df.loc[df['manufacturer'] == 'chevrolet']
+manu_ford = df.loc[df['manufacturer'] == 'ford']
+manu_honda = df.loc[df['manufacturer'] == 'honda']
+
+chev_hwy = manu_chev['hwy'].mean()
+ford_hwy = manu_ford['hwy'].mean()
+honda_hwy = manu_honda['hwy'].mean()
+
+result = (chev_hwy + ford_hwy + honda_hwy) / 3
+print("avg : {}".format(result))
+
+# avg : 24.603430799220273
+```
+
+#### 4번
+
+```python
+# 4. "audi"에서 생산한 자동차 중에 어떤 자동차 모델의 hwy(고속도로 연비)가 
+# 높은지 알아보려고 한다. "audi"에서 생산한 자동차 중 hwy가 1~5위에 해당하는 
+# 자동차의 데이터를 출력하세요.
+
+manu_audi = df.loc[df['manufacturer'] == 'audi']
+
+display(manu_audi.sort_values(by=['hwy'], ascending=False).head())
+```
+
+![image-20200916222005547](/assets/img/muchine/image-20200916222005547.png)
 
 #### arange
 
