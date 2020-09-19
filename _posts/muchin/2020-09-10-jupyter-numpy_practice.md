@@ -143,12 +143,38 @@ class_suv = df.loc[df['class'] == 'suv'].copy()
 
 display(class_suv)
 
-test = (class_suv['cty'] + class_suv['hwy'])/2
+class_suv['avg'] = (class_suv['cty'] + class_suv['hwy'])/2
 
 # df['avg'] = df.apply(test,axis=0)
-class_suv['avg'] = test
 
 display(class_suv.sort_values(by=['avg'], ascending=False).head())
 ```
 
 ![image-20200920000010075](/assets/img/muchine/image-20200920000010075.png)
+
+#### 6번
+
+```python
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv('./data/mpg.txt')
+
+display(df.drop_duplicates(['class'])['class'])
+
+# list = [ df.loc[df['class'] == x ]['class'] for x in df.drop_duplicates(['class'])['class']]
+test = {}
+test['suv'] = df.loc[df['class'] == 'suv']['cty'].mean()
+test['midsize'] = df.loc[df['class'] == 'midsize']['cty'].mean()
+test['compact'] = df.loc[df['class'] == 'compact']['cty'].mean()
+test['2seater'] = df.loc[df['class'] == '2seater']['cty'].mean()
+test['minivan'] = df.loc[df['class'] == 'minivan']['cty'].mean()
+test['pickup'] = df.loc[df['class'] == 'pickup']['cty'].mean()
+test['subcompact'] = df.loc[df['class'] == 'subcompact']['cty'].mean()
+
+result = sorted(test.items(),key=lambda x:x[1], reverse= True)
+
+print(result)
+#[('subcompact', 20.37142857142857), ('compact', 20.127659574468087), ('midsize', 18.75609756097561), ('minivan', 15.818181818181818), ('2seater', 15.4), ('suv', 13.5), ('pickup', 13.0)]
+```
+
