@@ -131,3 +131,24 @@ display(manu_audi.sort_values(by=['hwy'], ascending=False).head())
 
 ![image-20200916222005547](/assets/img/muchine/image-20200916222005547.png)
 
+#### 5번
+
+```python
+# 5. mpg 데이터는 연비를 나타내는 변수가 2개입니다. 
+# 두 변수를 각각 활용하는 대신 하나의 통합 연비 변수를 만들어 사용하려 합니다. 
+# 평균 연비 변수는 두 연비(고속도로와 도시)의 평균을 이용합니다. 
+# 회사별로 "suv" 자동차의 평균 연비를 구한후 내림차순으로 정렬한 후 1~5위까지 데이터를 출력하세요.
+
+class_suv = df.loc[df['class'] == 'suv'].copy()
+
+display(class_suv)
+
+test = (class_suv['cty'] + class_suv['hwy'])/2
+
+# df['avg'] = df.apply(test,axis=0)
+class_suv['avg'] = test
+
+display(class_suv.sort_values(by=['avg'], ascending=False).head())
+```
+
+![image-20200920000010075](/assets/img/muchine/image-20200920000010075.png)
