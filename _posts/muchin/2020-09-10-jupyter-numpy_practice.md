@@ -114,7 +114,6 @@ honda_hwy = manu_honda['hwy'].mean()
 result = (chev_hwy + ford_hwy + honda_hwy) / 3
 print("avg : {}".format(result))
 
-# avg : 24.603430799220273
 ```
 
 #### 4번
