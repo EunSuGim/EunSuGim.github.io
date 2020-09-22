@@ -107,13 +107,6 @@ manu_chev = df.loc[df['manufacturer'] == 'chevrolet']
 manu_ford = df.loc[df['manufacturer'] == 'ford']
 manu_honda = df.loc[df['manufacturer'] == 'honda']
 
-chev_hwy = manu_chev['hwy'].mean()
-ford_hwy = manu_ford['hwy'].mean()
-honda_hwy = manu_honda['hwy'].mean()
-
-result = (chev_hwy + ford_hwy + honda_hwy) / 3
-print("avg : {}".format(result))
-
 ```
 
 #### 4번
