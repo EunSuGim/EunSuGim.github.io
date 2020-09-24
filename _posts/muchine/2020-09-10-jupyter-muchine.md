@@ -1,4 +1,15 @@
- AI : (Artificial Intelligence) : 인간이 가지고 있는 학습능력, 응용력, 추론능력 컴퓨터를 통해서 
+```title: "AI - pandas_practice"
+title: "AI - muchine"
+excerpt: "muchine"
+toc: true
+toc_sticky: true
+categories: ai
+tags: ai
+last_modified_at: 2020-09-24T08:17:00-18:00
+typora-root-url: ..\..\assets\img\muchine
+```
+
+AI : (Artificial Intelligence) : 인간이 가지고 있는 학습능력, 응용력, 추론능력 컴퓨터를 통해서 
                                   구현하고자 하는 가장 포괄적인 개념
 
  Machine Learning : AI를 구현하는 하나의 방법론. 데이터를 이용해서 데이터의 특성과 패턴을 학습하고 그 결과를 
