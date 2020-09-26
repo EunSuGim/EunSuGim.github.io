@@ -130,16 +130,16 @@ display(manu_audi.sort_values(by=['hwy'], ascending=False).head())
 # 두 변수를 각각 활용하는 대신 하나의 통합 연비 변수를 만들어 사용하려 합니다. 
 # 평균 연비 변수는 두 연비(고속도로와 도시)의 평균을 이용합니다. 
 # 회사별로 "suv" 자동차의 평균 연비를 구한후 내림차순으로 정렬한 후 1~5위까지 데이터를 출력하세요.
+import numpy as np
+import pandas as pd
 
-class_suv = df.loc[df['class'] == 'suv'].copy()
+df = pd.read_csv('./data/mpg.txt')
 
-display(class_suv)
+display(df)
 
-class_suv['avg'] = (class_suv['cty'] + class_suv['hwy'])/2
+df['avg'] = (df['cty'] + df['hwy']) / 2 
 
-# df['avg'] = df.apply(test,axis=0)
-
-display(class_suv.sort_values(by=['avg'], ascending=False).head())
+display(df[df['class']=='suv'])
 ```
 
 ![image-20200920000010075](/assets/img/muchine/image-20200920000010075.png)
