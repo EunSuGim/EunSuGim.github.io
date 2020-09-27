@@ -98,15 +98,19 @@ print('toyota : {}'.format(toyota_cty))
 ```python
 # 3. "chevrolet", "ford", "honda" 자동차의 고속도로 연비 평균을 알아보려고 한다. 
 # 이 회사들의 데이터를 추출한 후 hwy(고속도로 연비) 평균을 구하세요.
-
+import numpy as np
+import pandas as pd
 df = pd.read_csv('./data/mpg.txt')
 
-display(df.head())
+# display(df.head())
 
-manu_chev = df.loc[df['manufacturer'] == 'chevrolet']
-manu_ford = df.loc[df['manufacturer'] == 'ford']
-manu_honda = df.loc[df['manufacturer'] == 'honda']
+boolean_mask = (df['manufacturer'] == 'chevrolet') | (df['manufacturer'] == 'ford') | (df['manufacturer'] == 'honda')
 
+result = df.loc[boolean_mask]
+
+result_mean = result['hwy'].mean()
+
+display(result_mean)
 ```
 
 #### 4번
@@ -147,26 +151,17 @@ display(df[df['class']=='suv'])
 #### 6번
 
 ```python
+# 6. mpg 데이터의 class는 "suv", "compact" 등 자동차의 특징에 따라 
+# 일곱 종류로 분류한 변수입니다. 어떤 차종의 도시 연비가 높은지 비교하려 합니다. 
+# class별 cty 평균을 구하고 cty 평균이 높은 순으로 정렬해 출력하세요.
 import numpy as np
 import pandas as pd
 
 df = pd.read_csv('./data/mpg.txt')
 
-display(df.drop_duplicates(['class'])['class'])
+display(df)
 
-# list = [ df.loc[df['class'] == x ]['class'] for x in df.drop_duplicates(['class'])['class']]
-test = {}
-test['suv'] = df.loc[df['class'] == 'suv']['cty'].mean()
-test['midsize'] = df.loc[df['class'] == 'midsize']['cty'].mean()
-test['compact'] = df.loc[df['class'] == 'compact']['cty'].mean()
-test['2seater'] = df.loc[df['class'] == '2seater']['cty'].mean()
-test['minivan'] = df.loc[df['class'] == 'minivan']['cty'].mean()
-test['pickup'] = df.loc[df['class'] == 'pickup']['cty'].mean()
-test['subcompact'] = df.loc[df['class'] == 'subcompact']['cty'].mean()
+display(df['cty'].groupby(df['class']).mean().sort_values(ascending=False))
 
-result = sorted(test.items(),key=lambda x:x[1], reverse= True)
-
-print(result)
-#[('subcompact', 20.37142857142857), ('compact', 20.127659574468087), ('midsize', 18.75609756097561), ('minivan', 15.818181818181818), ('2seater', 15.4), ('suv', 13.5), ('pickup', 13.0)]
 ```
 
