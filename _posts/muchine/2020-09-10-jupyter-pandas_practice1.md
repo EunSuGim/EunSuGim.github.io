@@ -114,18 +114,26 @@ display(low_rating)
 #### 6번
 
 ```python
-# 6. mpg 데이터의 class는 "suv", "compact" 등 자동차의 특징에 따라 
-# 일곱 종류로 분류한 변수입니다. 어떤 차종의 도시 연비가 높은지 비교하려 합니다. 
-# class별 cty 평균을 구하고 cty 평균이 높은 순으로 정렬해 출력하세요.
+# 6. 2015년도에 평가된 모든 Romance 영화의 평균 평점은?
 import numpy as np
 import pandas as pd
+import time
+from datetime import datetime
 
-df = pd.read_csv('./data/mpg.txt')
+start_date = time.mktime(datetime.strptime('2015-01-01 0:0:1', '%Y-%m-%d %H:%M:%S').timetuple())
+end_date = time.mktime(datetime.strptime('2015-12-31 23:59:59', '%Y-%m-%d %H:%M:%S').timetuple())
 
-display(df)
 
-display(df['cty'].groupby(df['class']).mean().sort_values(ascending=False))
+merge_df = pd.merge(df_rating, df_movie, on ='movieId', how='inner')
 
+romance_df = merge_df.loc[merge_df['genres'].str.contains("Romance")]
+
+boolean_mask = (romance_df['timestamp'] > start_date) & (romance_df['timestamp'] < end_date)
+
+result_df = romance_df[boolean_mask]['rating'].mean()
+
+display(result_df)
+# 3.396375098502758
 ```
 
 
