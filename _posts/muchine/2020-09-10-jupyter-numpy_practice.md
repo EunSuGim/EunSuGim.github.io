@@ -165,3 +165,41 @@ display(df['cty'].groupby(df['class']).mean().sort_values(ascending=False))
 
 ```
 
+![image-20200927222042104](/assets/img/muchine/image-20200927222042104.png)
+
+#### 7번
+
+```python
+# 7. 어떤 회사 자동차의 hwy(고속도로 연비)가 가장 높은지 알아보려 합니다. 
+# hwy(고속도로 연비) 평균이 가장 높은 회사 세 곳을 출력하세요.
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv('./data/mpg.txt')
+
+display(df)
+
+display(df['hwy'].groupby(df['manufacturer']).mean().sort_values(ascending=False)[:3])
+```
+
+![image-20200927222130614](/assets/img/muchine/image-20200927222130614.png)
+
+#### 8번
+
+```python
+# 8. 어떤 회사에서 "compact" 차종을 가장 많이 생산하는지 알아보려고 합니다. 
+# 각 회사별 "compact" 차종 수를 내림차순으로 정렬해 출력하세요.
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv('./data/mpg.txt')
+
+boolean_mask = df['class'] == 'compact'
+
+compact_df = df.loc[boolean_mask]
+
+
+display(compact_df['class'].groupby(df['manufacturer']).count().sort_values(ascending=False))
+```
+
+![image-20200927222200729](/assets/img/muchine/image-20200927222200729.png)
