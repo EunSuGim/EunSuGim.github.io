@@ -1,5 +1,5 @@
 ---
-title: "AI - pandas_practice"
+title: "AI - pandas_practice(2)"
 excerpt: "pandas"
 toc: true
 toc_sticky: true
