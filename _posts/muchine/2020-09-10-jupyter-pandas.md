@@ -11,6 +11,12 @@ typora-root-url: ..\..\assets\img\muchine
 
 
 
+
+
+## Pandas
+
+
+
 pandas
 
 ndarray(NumPy)를 기본 자료구조로 이용
