@@ -23,6 +23,12 @@ ndarray(NumPy)를 기본 자료구조로 이용
 
 pandas는 두개의 또 다른 자료구조 이용
 
+
+
+#### Series
+
+
+
 series, DataFrame
 
 Series: 동일한 데이터 타입의 복수개의 성분으로 구정되는 자료구조(1차원)
