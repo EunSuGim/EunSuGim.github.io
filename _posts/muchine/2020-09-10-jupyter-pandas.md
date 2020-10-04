@@ -13,7 +13,11 @@ typora-root-url: ..\..\assets\img\muchine
 
 
 
-## Pandas
+
+
+
+
+# Pandas 
 
 
 
@@ -27,11 +31,11 @@ pandas는 두개의 또 다른 자료구조 이용
 
 #### Series
 
-
-
-series, DataFrame
-
 Series: 동일한 데이터 타입의 복수개의 성분으로 구정되는 자료구조(1차원)
+
+
+
+#### DataFrame
 
 DataFrame : 엑셀에서 Table과 같은 개념. Database의 Table과 같은 개념. Series로 구성
 
