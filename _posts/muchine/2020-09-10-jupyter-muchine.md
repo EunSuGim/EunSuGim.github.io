@@ -12,10 +12,10 @@ typora-root-url: ..\..\assets\img\muchine
 ## AI
 
 간이 가지고 있는 학습능력, 응용력, 추론능력 컴퓨터를 통해서 
-현하고자 하는 가장 포괄적인 개념
-Machine Learning AI를 구현하는 하나의 방법론. 
+현하고자 하는 가장 포괄적인 개념입니다.
+Machine Learning AI를 구현하는 하나의 방법론입니다. 
 데이터를 이용해서 데이터의 특성과 패턴을 학습하고 그 결과를 바탕으로 
-미지의 데이터에 대한 미래결과를 예측하는 프로그래밍 기법
+미지의 데이터에 대한 미래결과를 예측하는 프로그래밍 기법 중 하나입니다.
 
 ####  Machine Learning 방법들
 
@@ -30,10 +30,11 @@ Deep Learning : Machine Learning의 한 부분. Nerural network을 이용해서
 AI > Machine Learning > Deep Learning
 
 Machine Learning은 Explicit program의 한계때문에 고안
-Explicit program은 rule based program이라고 함
+Explicit program은 rule based program이라고 합니다.
 이런 Explicit program을 이용하면 웬만한 프로그램은 전부 구현 가능
-Explicit programming으로 할 수 없는 프로그램들이 있음.
-rule이 너무 많음, 조건이 너무 많음, 프로그램으로 표현하기 힘듬
+Explicit programming으로 할 수 없는 프로그램들이 있습니다.
+
+- rule이 너무 많음, 조건이 너무 많음, 프로그램으로 표현하기 힘듬 등등
 
 
 
@@ -58,9 +59,9 @@ Classification(분류) - binary classification
 
  #### 비지도학습(Unsupervised Learning)
 
-학습에 사용되는 데이터가 label이 없는 데이터를 사용
+학습에 사용되는 데이터가 label이 없는 데이터를 사용합니다.
 정답(label)이 없는 데이터만을 이용하기 때문에 입력값 자체가 가지고 있는 특성과 분포를 이용해서
-Grouping하는 Clustering(군집화)하는데 주로 사용
+Grouping하는 Clustering(군집화)하는데 주로 사용합니다.
 
 ####  준지도학습 
 
@@ -80,4 +81,5 @@ Supervised Learning(강화학습)
 
 공부시간에 따른 시험점수 예측 (점수)
 공부시간에 따른 시험합격여부 예측(합격/불합격)
-카드사용패턴에 따른 
+카드사용패턴
+
