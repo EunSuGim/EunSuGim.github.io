@@ -55,9 +55,9 @@ Explicit programming으로 할 수 없는 프로그램들이 있습니다.
 Regression(회귀)
 Classification(분류) - binary classification
 
-                      - multinomial classificaiton
+- multinomial classificaiton
 
- #### 비지도학습(Unsupervised Learning)
+#### 비지도학습(Unsupervised Learning)
 
 학습에 사용되는 데이터가 label이 없는 데이터를 사용합니다.
 정답(label)이 없는 데이터만을 이용하기 때문에 입력값 자체가 가지고 있는 특성과 분포를 이용해서
