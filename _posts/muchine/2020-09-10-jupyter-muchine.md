@@ -61,10 +61,9 @@ Explicit programming으로 할 수 없는 프로그램들이 있습니다.
 미래값 예측
 Regression(회귀)
 Classification(분류) - binary classification
+multinomial classificaiton
 
-- multinomial classificaiton
 
-  
 
 #### 비지도학습(Unsupervised Learning)
 
