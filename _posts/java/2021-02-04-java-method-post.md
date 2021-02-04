@@ -13,3 +13,8 @@ last_modified_at: 2021-02-04T08:17:00-18:00
 
 메소드 모음
 
+
+
+### map
+
+- getOrDefault(key, defaultValue)
