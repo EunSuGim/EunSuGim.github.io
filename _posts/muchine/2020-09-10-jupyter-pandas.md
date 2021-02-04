@@ -15,8 +15,6 @@ typora-root-url: ..\..\assets\img\muchine
 
 
 
-
-
 # Pandas 
 
 
