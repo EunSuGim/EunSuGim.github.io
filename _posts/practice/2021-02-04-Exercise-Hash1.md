@@ -19,9 +19,14 @@ typora-root-url: ..\..\assets\img\Exercise
  ※ 제한사항
 
 - 참여선수는 1명이상입니다.
+
 - completion의 길이는 participant의 길이보다 1작습니다.
+
 - 참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자입니다.
+
 - 참가자 중에는 동명이인이 있을 수 있습니다.
+
+  
 
 ## Input / Output
 
@@ -64,3 +69,9 @@ class Solution {
 }
 ```
 
+
+
+### PS
+
+HashMap을 사용해도 for문이 너무 많아 맘에 들지않았습니다.
+좀 더 for문을 줄일 수 있는 방법을 생각해봐야겠습니다.
