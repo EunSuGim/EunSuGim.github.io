@@ -20,10 +20,10 @@ typora-root-url: ..\..\assets\img\Algorithm
 
 ## Input / Output
 
-| phone_book | return |
-| ---------- | ------ |
-| [12,24]    | 12     |
-| [18,10]    | 2      |
+| Integer | return |
+| ------- | ------ |
+| [12,24] | 12     |
+| [18,10] | 2      |
 
 
 

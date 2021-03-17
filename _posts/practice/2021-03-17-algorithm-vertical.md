@@ -16,7 +16,7 @@ typora-root-url: ..\..\assets\img\Algorithm
 
 ## Input / Output
 
-| phone_book  | return                                             |
+| String      | return                                             |
 | ----------- | -------------------------------------------------- |
 | "test"      | t<br />e<br />s<br />t                             |
 | "good boy." | g<br />o<br />o<br />d<br /> <br />b<br />o<br />y |
