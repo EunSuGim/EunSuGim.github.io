@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" #"default" # "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ReadYaI"
+title                    : "ReadYcoDing"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "EunSu_Kim"
-description              : "AI preparing student."
+description              : "Programming student."
 url                      : "https://eunsugim.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "ReadYaI"
+  name             : "ReadYcoDing"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "South_Korea"
