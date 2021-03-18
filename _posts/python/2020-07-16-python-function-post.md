@@ -47,6 +47,8 @@ y = 100
 변수에 저장, 함수의 인자로 사용  
 함수의 리턴값으로 함수를 return
 
+
+
 ```python
 my_lambda = lambda x1, x2
 my_lambda(10,20)
