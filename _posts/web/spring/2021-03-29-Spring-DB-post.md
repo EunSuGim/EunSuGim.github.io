@@ -17,8 +17,6 @@ https://mvnrepository.com/artifact/mysql/mysql-connector-java
 
 
 
-
-
 ## framework란  
 library : 특수한 처리를 하기 위해 만들어 놓은 함수집합, jQuery도 라이브러리입니다.  
 - 장점 : 내가 모든걸 다 작성할 필요없어 편리합니다.  
