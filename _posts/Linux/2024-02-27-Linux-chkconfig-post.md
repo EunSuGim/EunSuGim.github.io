@@ -4,7 +4,7 @@ excerpt: "chkconfig"
 toc: true
 toc_sticky: true
 categories: Linux
-tags: java
+tags: Linux
 last_modified_at: 2024-02-27T08:17:00-18:00
 ---
 
