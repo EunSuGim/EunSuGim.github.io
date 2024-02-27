@@ -1,13 +1,13 @@
 ---
-title: "Web - Spring"
-excerpt: "Spring"
+title: "Web - Django"
+excerpt: "Django"
 toc: true
 toc_sticky: true
-categories: Spring
-tags: Spring
+categories: Web
+tags: Django
 last_modified_at: 2020-07-28T08:17:00-18:00
 ---
-## Spring 
+## Django
 python으로 만들어진 오픈소스, web_application을 쉽게 작성할 수 있도록 도와주는 framework  
 
 ## framework란  
