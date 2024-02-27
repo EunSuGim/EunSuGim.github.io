@@ -15,7 +15,7 @@ last_modified_at: 2024-02-27T08:17:00-18:00
 - Xinetd 방식은 슈퍼 데몬이 메모리에 상주하며 관리하는 데몬을 동작시키는 방식으로  속도는 느려지나 리소스를 절약할 수 있다.
 
 
-1. /etc/xinetd.conf : xinetd 설정파일  
+1-1. /etc/xinetd.conf : xinetd 설정파일  
   
 |   |   |
 |---|---|
@@ -29,7 +29,8 @@ last_modified_at: 2024-02-27T08:17:00-18:00
 |enabled= 사용 가능한 서비스 목록|enabled과 disabled가 중복되면 차된됨|
 |disabled= 사용 불가능한 서비스 목록|
 
-2. /etc/xinetd.d : 디렉터리 하위에 서비스명으로 된 설정파일을 개별 설정 가능.                  서비스명은 /etc/services 와 동일하게 설정하고 .conf는 붙이지 않는다.
+
+1-2. /etc/xinetd.d : 디렉터리 하위에 서비스명으로 된 설정파일을 개별 설정 가능.                  서비스명은 /etc/services 와 동일하게 설정하고 .conf는 붙이지 않는다.
 
 |   |   |
 |---|---|
@@ -39,11 +40,12 @@ last_modified_at: 2024-02-27T08:17:00-18:00
 |wait|yes는 단일 쓰레드, no는 다중 쓰레드로 동작|
 |server|서비스가 연결되었을 때 실행할 프로그램|
 
-3. TCP Wrapper : /etc/hosts.deny, /etc/hosts.allow를 참조. 서비스를 전부 막고                     ssh, ftp 등 주요 서비스를 특정 호스트에만 허용해줄 수 있음.  
+
+1-3. TCP Wrapper : /etc/hosts.deny, /etc/hosts.allow를 참조. 서비스를 전부 막고                     ssh, ftp 등 주요 서비스를 특정 호스트에만 허용해줄 수 있음.  
  - /etc/hosts.deny : 서비스별 거부 목록 파일(tcpd)  
  - /etc/hosts.allow : 서비스별 허용 목록 파일(tcpd)
 
-4. 실행 / 종료 / 재시작 / 상태확인 방법- 실행 : /etc/rc.d/init.d/xinet.d [서비스 명] start    
+1-4. 실행 / 종료 / 재시작 / 상태확인 방법- 실행 : /etc/rc.d/init.d/xinet.d [서비스 명] start    
 - 종료 : /etc/rc.d/init.d/xinet.d [서비스 명] stop   
 - 재시작 : /etc/rc.d/init.d/xinet.d [서비스 명] restart   
 - 상태 : /etc/rc.d/init.d/xinet.d [서비스 명] status
