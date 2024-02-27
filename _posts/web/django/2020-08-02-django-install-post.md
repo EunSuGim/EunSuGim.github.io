@@ -1,5 +1,5 @@
 ---
-title: "Web - Django"
+title: "Django - Install"
 excerpt: "Django"
 toc: true
 toc_sticky: true

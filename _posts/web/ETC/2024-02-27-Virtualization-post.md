@@ -3,7 +3,7 @@ title: "Web - Virtualization"
 excerpt: "Virtual"
 toc: true
 toc_sticky: true
-categories: Web
+categories: web
 tags: web, Virtual
 last_modified_at: 2024-02-27T08:17:00-18:00
 ---
