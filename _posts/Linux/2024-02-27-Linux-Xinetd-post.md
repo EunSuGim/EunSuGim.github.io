@@ -42,8 +42,8 @@ last_modified_at: 2024-02-27T08:17:00-18:00
 
 
 1-3. TCP Wrapper : /etc/hosts.deny, /etc/hosts.allow를 참조. 서비스를 전부 막고                     ssh, ftp 등 주요 서비스를 특정 호스트에만 허용해줄 수 있음.  
- - /etc/hosts.deny : 서비스별 거부 목록 파일(tcpd)  
- - /etc/hosts.allow : 서비스별 허용 목록 파일(tcpd)
+- /etc/hosts.deny : 서비스별 거부 목록 파일(tcpd)  
+- /etc/hosts.allow : 서비스별 허용 목록 파일(tcpd)
 
 1-4. 실행 / 종료 / 재시작 / 상태확인 방법- 실행 : /etc/rc.d/init.d/xinet.d [서비스 명] start    
 - 종료 : /etc/rc.d/init.d/xinet.d [서비스 명] stop   
