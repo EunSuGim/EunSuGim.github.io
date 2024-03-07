@@ -22,9 +22,9 @@ typora-root-url: ..\..\assets\img\Algorithm
 ## Input / Output
 
 players  
-["mumu", "soe", "poe", "kai", "mine"]
+["mumu", "soe", "poe", "kai", "mine"]  
 callings  
-["kai", "kai", "mine", "mine"]
+["kai", "kai", "mine", "mine"]  
 result  
 ["mumu", "kai", "mine", "soe", "poe"]
 
