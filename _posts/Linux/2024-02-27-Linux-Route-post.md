@@ -8,6 +8,8 @@ tags:Linux, Route
 last_modified_at: 2024-03-08T08:17:00-18:00
 ---
 
+
+#Route
 - route 명령어로 add 할 시 재부팅할 때 초기화됨.
 
 - 재부팅시에도 적용할려면 route 명령어를 ifcfg-ethx파일에 추가해야함

@@ -3,8 +3,8 @@ title: "Linux - Bonding"
 excerpt: "Bonding"
 toc: true
 toc_sticky: true
-categories: Linux,Bonding
-tags: Linux
+categories: Linux
+tags:Linux,Bonding
 last_modified_at: 2024-03-08T08:17:00-18:00
 ---
 
