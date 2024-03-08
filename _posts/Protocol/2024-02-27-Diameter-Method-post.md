@@ -1,5 +1,5 @@
 ---
-title: "SIP - Method"
+title: "Diameter - Method"
 excerpt: "Method"
 toc: true
 toc_sticky: true
