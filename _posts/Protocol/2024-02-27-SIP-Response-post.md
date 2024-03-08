@@ -8,9 +8,6 @@ tags:SIP,Protocol
 last_modified_at: 2024-02-27T08:17:00-18:00
 ---
 
-SIP Response
-create: 2023-11-01
-
 ## Response
 
 SIP 요청에 대한 응답이 이루어져야 트랜잭션이 완료. 요청에 대한 응답이 없을 경우에는
