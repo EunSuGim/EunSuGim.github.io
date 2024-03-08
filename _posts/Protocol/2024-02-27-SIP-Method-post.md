@@ -3,8 +3,8 @@ title: "SIP - Method"
 excerpt: "Method"
 toc: true
 toc_sticky: true
-categories: SIP
-tags: SIP
+categories: Protocol
+tags: SIP, Protocol
 last_modified_at: 2024-02-27T08:17:00-18:00
 ---
 

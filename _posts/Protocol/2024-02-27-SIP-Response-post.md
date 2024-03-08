@@ -3,8 +3,8 @@ title: "SIP - Response"
 excerpt: "Response"
 toc: true
 toc_sticky: true
-categories: SIP
-tags: SIP
+categories: Protocol
+tags: SIP, Protocol
 last_modified_at: 2024-02-27T08:17:00-18:00
 ---
 
@@ -169,7 +169,3 @@ Request가 정상적으로 처리되었음을 의미
   Request-URI에 나타난 사용자가 존재하지 않음을 의미.
 - 606 Not Acceptable
   상대방에게 연결되었지만, 요청된 미디어나 대역폭 등의 이유로 연결할 수 없음을 의미.
-
-
-tag : #SIP , #Response
-node : 
