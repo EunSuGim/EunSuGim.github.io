@@ -4,7 +4,7 @@ excerpt: "Response"
 toc: true
 toc_sticky: true
 categories: Protocol
-tags:SIP,Protocol
+tags:Protocol
 last_modified_at: 2024-03-08T08:17:00-18:00
 ---
 
