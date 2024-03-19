@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "ReadYcoDing"
-  avatar           : /assets/images/eunsu.jpg
+  avatar           : /assets/img/eunsu.jpg
   bio              : "I am an **amazing** person."
   location         : "South_Korea"
   email            : eunsu.kim3761@gmail.com
