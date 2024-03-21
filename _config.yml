@@ -140,7 +140,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "https://eunsugim.github.io/"
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -198,6 +198,11 @@ compress_html:
   ignore:
     envs: [development]
 
+
+include:
+ - _javascript
+ 
+ 
 exclude:
   - "*.gem"
   - "*.gemspec"
