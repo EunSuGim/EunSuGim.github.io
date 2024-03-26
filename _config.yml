@@ -17,7 +17,7 @@ timezone: Asia/Seoul
 
 title: ReadYcoDing # the main title
 
-tagline: Backend # it will display as the sub-title
+tagline: Backend development # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
